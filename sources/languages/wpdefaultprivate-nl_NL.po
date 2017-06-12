@@ -42,7 +42,7 @@ msgstr "wpDefaultPrivate"
 
 #. Plugin URI of the plugin/theme
 msgid "http://wordpress.org/plugins/wpDefaultPrivate/"
-msgstr "http://wordpress.org/plugins/wpDefaultPrivate/"
+msgstr "http://nl.wordpress.org/plugins/wpDefaultPrivate/"
 
 #. Description of the plugin/theme
 msgid "This plugin makes all posts default to private instead of public"
