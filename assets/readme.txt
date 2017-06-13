@@ -30,3 +30,6 @@ bugs and feature-requests can go to: [GitHub](https://github.com/koter84/wpDefau
 
 * Dutch
 * English
+* German
+* Russian
+* Swedish
