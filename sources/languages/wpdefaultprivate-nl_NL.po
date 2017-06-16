@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: wpDefaultPrivate 1.0.1\n"
+"Project-Id-Version: wpDefaultPrivate 1.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpDefaultPrivate\n"
-"POT-Creation-Date: 2017-06-12 00:00:00+00:00\n"
+"POT-Creation-Date: 2017-06-16 00:00:00+00:00\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -16,23 +16,23 @@ msgstr ""
 msgid "Private"
 msgstr "Privé"
 
-#: wpdefaultprivate.php:90
+#: wpdefaultprivate.php:94
 msgid "You do not have sufficient permissions to access this page."
 msgstr "Je hebt onvoldoende rechten voor het bekijken van deze pagina."
 
-#: wpdefaultprivate.php:117
+#: wpdefaultprivate.php:121
 msgid "Settings Saved"
 msgstr "Instellingen Opgeslagen"
 
-#: wpdefaultprivate.php:130
+#: wpdefaultprivate.php:134
 msgid "wpDefaultPrivate Settings"
 msgstr "wpDefaultPrivate Instellingen"
 
-#: wpdefaultprivate.php:136
+#: wpdefaultprivate.php:140
 msgid "Private Posts visible for all users"
 msgstr "Privé Berichten zichtbaar voor alle gebruikers"
 
-#: wpdefaultprivate.php:145
+#: wpdefaultprivate.php:149
 msgid "Save Changes"
 msgstr "Wijzigingen Opslaan"
 

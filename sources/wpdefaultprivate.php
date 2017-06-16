@@ -1,14 +1,14 @@
 <?php
 /**
  * @package wpDefaultPrivate
- * @version 1.0.1
+ * @version 1.1.0
  */
 /*
 Plugin Name: wpDefaultPrivate
 Plugin URI: http://wordpress.org/plugins/wpDefaultPrivate/
 Description: This plugin makes all posts default to private instead of public
 Author: Dennis Koot
-Version: 1.0.1
+Version: 1.1.0
 Author URI: http://denniskoot.nl/
 Text Domain: wpDefaultPrivate
 */
@@ -71,6 +71,10 @@ function wpdefaultprivate_install()
 {
 	// set default option-values
 	update_option('wpdefaultprivate_allusers', 1);
+	// set capabilities to default value
+	$wp_roles->add_cap('author', 'read_private_posts');
+	$wp_roles->add_cap('contributor', 'read_private_posts');
+	$wp_roles->add_cap('subscriber', 'read_private_posts');
 }
 
 
