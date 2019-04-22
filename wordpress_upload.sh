@@ -184,7 +184,7 @@ do
 	index="$index* [$line](#$line_lower)\n"
 done < /tmp/${plugin_name}_readme
 
-sed -i s/"# ${plugin_name_disp} "/"# ${plugin_name_disp} \n[![Wordpress-Active-Installs](https:\/\/img.shields.io\/wordpress\/plugin\/ai\/${plugin_name}.svg)](https:\/\/wordpress.org\/plugins\/${plugin_name}\/)\n"/ README.md
+sed -i s/"# ${plugin_name_disp} "/"# ${plugin_name_disp} \n[![Wordpress-Active-Installs](https:\/\/img.shields.io\/wordpress\/plugin\/installs\/${plugin_name}.svg)](https:\/\/wordpress.org\/plugins\/${plugin_name}\/)\n"/ README.md
 sed -i s/"# ${plugin_name_disp} "/"# ${plugin_name_disp} \n[![Wordpress-Downloads](https:\/\/img.shields.io\/wordpress\/plugin\/dt\/${plugin_name}.svg)](https:\/\/wordpress.org\/plugins\/${plugin_name}\/)"/ README.md
 sed -i s/"# ${plugin_name_disp} "/"# ${plugin_name_disp} \n[![Wordpress-Version](https:\/\/img.shields.io\/wordpress\/plugin\/v\/${plugin_name}.svg)](https:\/\/wordpress.org\/plugins\/${plugin_name}\/)"/ README.md
 sed -i s/"# ${plugin_name_disp} "/"# ${plugin_name_disp} \n[![Wordpress-Supported](https:\/\/img.shields.io\/wordpress\/v\/${plugin_name}.svg)](https:\/\/wordpress.org\/plugins\/${plugin_name}\/)"/ README.md

@@ -2,7 +2,7 @@
 [![Wordpress-Supported](https://img.shields.io/wordpress/v/wpdefaultprivate.svg)](https://wordpress.org/plugins/wpdefaultprivate/)
 [![Wordpress-Version](https://img.shields.io/wordpress/plugin/v/wpdefaultprivate.svg)](https://wordpress.org/plugins/wpdefaultprivate/)
 [![Wordpress-Downloads](https://img.shields.io/wordpress/plugin/dt/wpdefaultprivate.svg)](https://wordpress.org/plugins/wpdefaultprivate/)
-[![Wordpress-Active-Installs](https://img.shields.io/wordpress/plugin/ai/wpdefaultprivate.svg)](https://wordpress.org/plugins/wpdefaultprivate/)
+[![Wordpress-Active-Installs](https://img.shields.io/wordpress/plugin/installs/wpdefaultprivate.svg)](https://wordpress.org/plugins/wpdefaultprivate/)
 
 **Contributors:** koter84  
 **Requires at least:** 4.0  
