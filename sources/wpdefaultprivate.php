@@ -72,6 +72,7 @@ function wpdefaultprivate_install()
 	// set default option-values
 	update_option('wpdefaultprivate_allusers', 1);
 	// set capabilities to default value
+	global $wp_roles;
 	$wp_roles->add_cap('author', 'read_private_posts');
 	$wp_roles->add_cap('contributor', 'read_private_posts');
 	$wp_roles->add_cap('subscriber', 'read_private_posts');

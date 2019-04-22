@@ -16,23 +16,23 @@ msgstr ""
 msgid "Private"
 msgstr ""
 
-#: wpdefaultprivate.php:94
+#: wpdefaultprivate.php:95
 msgid "You do not have sufficient permissions to access this page."
 msgstr ""
 
-#: wpdefaultprivate.php:121
+#: wpdefaultprivate.php:122
 msgid "Settings Saved"
 msgstr ""
 
-#: wpdefaultprivate.php:134
+#: wpdefaultprivate.php:135
 msgid "wpDefaultPrivate Settings"
 msgstr ""
 
-#: wpdefaultprivate.php:140
+#: wpdefaultprivate.php:141
 msgid "Private Posts visible for all users"
 msgstr ""
 
-#: wpdefaultprivate.php:149
+#: wpdefaultprivate.php:150
 msgid "Save Changes"
 msgstr ""
 
