@@ -1,14 +1,14 @@
 <?php
 /**
  * @package wpDefaultPrivate
- * @version 1.1.0
+ * @version 1.1.1
  */
 /*
 Plugin Name: wpDefaultPrivate
 Plugin URI: http://wordpress.org/plugins/wpDefaultPrivate/
 Description: This plugin makes all posts default to private instead of public
 Author: Dennis Koot
-Version: 1.1.0
+Version: 1.1.1
 Author URI: http://denniskoot.nl/
 Text Domain: wpDefaultPrivate
 */

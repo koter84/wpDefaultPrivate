@@ -6,8 +6,8 @@
 
 **Contributors:** koter84  
 **Requires at least:** 4.0  
-**Tested up to:** 4.8  
-**Stable tag:** 1.1.0  
+**Tested up to:** 5.1  
+**Stable tag:** 1.1.1  
 **Tags:** private  
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
@@ -31,6 +31,9 @@ bugs and feature-requests can go to: [GitHub](https://github.com/koter84/wpDefau
 
 ## Changelog 
 
+### 1.1.1 
+* fix: Missing global var causes error on activation
+
 ### 1.1.0 
 * fix: set capability to read private posts for author, contributor and subscriber during install
 
@@ -47,4 +50,3 @@ bugs and feature-requests can go to: [GitHub](https://github.com/koter84/wpDefau
 * German
 * Russian
 * Swedish
-

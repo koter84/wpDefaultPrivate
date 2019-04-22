@@ -172,10 +172,10 @@ fi
 echo "> convert wordpress-readme to github-readme"
 if [ ! -f /tmp/wp2md ]
 then
-	curl -s -L https://github.com/wpreadme2markdown/wp-readme-to-markdown/releases/latest | egrep -o '/wpreadme2markdown/wp-readme-to-markdown/releases/download/[0-9.]*/wp2md.phar' | wget --base=http://github.com/ -i - -O /tmp/wp2md
+	curl -s -L https://github.com/wpreadme2markdown/wp2md/releases/latest | egrep -o '/wpreadme2markdown/wp2md/releases/download/[0-9.]*/wp2md.phar' | wget --base=http://github.com/ -i - -O /tmp/wp2md
 	chmod +x /tmp/wp2md
 fi
-/tmp/wp2md convert < assets/readme.txt > README.md
+/tmp/wp2md assets/readme.txt README.md
 index="## Index \n\n"
 grep '^## ' README.md | sed s/'## '// | sed s/' $'// | sed s/' '/-/g > /tmp/${plugin_name}_readme
 while read line
