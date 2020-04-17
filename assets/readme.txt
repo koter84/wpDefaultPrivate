@@ -1,8 +1,8 @@
 === wpDefaultPrivate ===
 Contributors: koter84
 Requires at least: 4.0
-Tested up to: 5.1
-Stable tag: 1.1.2
+Tested up to: 5.4
+Stable tag: 1.1.3
 Tags: private
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -19,6 +19,9 @@ When the status of a post changes to published it is instead changed to private.
 bugs and feature-requests can go to: [GitHub](https://github.com/koter84/wpDefaultPrivate/issues) or [WordPress](https://wordpress.org/support/plugin/wpdefaultprivate)
 
 == Changelog ==
+
+= 1.1.3 =
+* checked compatibility with wordpress 5.4
 
 = 1.1.2 =
 * fix: Missing global var causes error on activation
