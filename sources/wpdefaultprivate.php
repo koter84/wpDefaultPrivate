@@ -1,14 +1,14 @@
 <?php
 /**
  * @package wpDefaultPrivate
- * @version 1.1.3
+ * @version 1.2.0
  */
 /*
 Plugin Name: wpDefaultPrivate
 Plugin URI: http://wordpress.org/plugins/wpDefaultPrivate/
 Description: This plugin makes all posts default to private instead of public
 Author: Dennis Koot
-Version: 1.1.3
+Version: 1.2.0
 Author URI: http://denniskoot.nl/
 Text Domain: wpDefaultPrivate
 */
@@ -69,13 +69,19 @@ register_activation_hook( __FILE__, 'wpdefaultprivate_install');
 // Install function
 function wpdefaultprivate_install()
 {
-	// set default option-values
-	update_option('wpdefaultprivate_allusers', 1);
-	// set capabilities to default value
 	global $wp_roles;
+
+	// set default for posts
+	update_option('wpdefaultprivate_allusers_posts', 1);
 	$wp_roles->add_cap('author', 'read_private_posts');
 	$wp_roles->add_cap('contributor', 'read_private_posts');
 	$wp_roles->add_cap('subscriber', 'read_private_posts');
+
+	// set default for pages
+	update_option('wpdefaultprivate_allusers_pages', 1);
+	$wp_roles->add_cap('author', 'read_private_pages');
+	$wp_roles->add_cap('contributor', 'read_private_pages');
+	$wp_roles->add_cap('subscriber', 'read_private_pages');
 }
 
 
@@ -96,12 +102,12 @@ function wpdefaultprivate_admin_options()
 	}
 
 	// See if the user has posted us some information
-	$key = 'wpdefaultprivate_allusers';
 	$hidden_field_name = 'wpdefaultprivate_hidden';
 	if( isset($_POST[ $hidden_field_name ]) && $_POST[ $hidden_field_name ] == 'Y' )
 	{
 		global $wp_roles;
 
+		$key = 'wpdefaultprivate_allusers_posts';
 		if(isset($_POST[$key]))
 		{
 			update_option( $key, $_POST[$key] );
@@ -118,6 +124,25 @@ function wpdefaultprivate_admin_options()
 			$wp_roles->remove_cap('contributor', 'read_private_posts');
 			$wp_roles->remove_cap('subscriber', 'read_private_posts');
 		}
+
+		$key = 'wpdefaultprivate_allusers_pages';
+		if(isset($_POST[$key]))
+		{
+			update_option( $key, $_POST[$key] );
+			// add capability to read private pages
+			$wp_roles->add_cap('author', 'read_private_pages');
+			$wp_roles->add_cap('contributor', 'read_private_pages');
+			$wp_roles->add_cap('subscriber', 'read_private_pages');
+		}
+		else
+		{
+			update_option( $key, 0 );
+			// remove capability to read private pages
+			$wp_roles->remove_cap('author', 'read_private_pages');
+			$wp_roles->remove_cap('contributor', 'read_private_pages');
+			$wp_roles->remove_cap('subscriber', 'read_private_pages');
+		}
+
 		// Put an settings updated message on the screen
 		echo "<div class=\"updated\"><p><strong>".__('Settings Saved', 'wpdefaultprivate')."</strong></p></div>";
     }
@@ -138,9 +163,17 @@ function wpdefaultprivate_admin_options()
 	<table class="form-table">
 
 		<tr valign="top">
-			<th scope="row"><label for="wpdefaultprivate_allusers"><?php echo __('Private Posts visible for all users', wpdefaultprivate); ?></label></th>
+			<th scope="row"><label for="wpdefaultprivate_allusers_posts"><?php echo __('Private Posts visible for all users', wpdefaultprivate); ?></label></th>
 			<td>
-				<input type="checkbox" name="wpdefaultprivate_allusers" value="1" <?php echo $sel; ?>/>
+				<input type="checkbox" name="wpdefaultprivate_allusers_posts" value="1" <?php echo $sel; ?>/>
+				<p class="description"><?php echo __('', wpdefaultprivate); ?></p>
+			</td>
+		</tr>
+
+		<tr valign="top">
+			<th scope="row"><label for="wpdefaultprivate_allusers_pages"><?php echo __('Private Pages visible for all users', wpdefaultprivate); ?></label></th>
+			<td>
+				<input type="checkbox" name="wpdefaultprivate_allusers_pages" value="1" <?php echo $sel; ?>/>
 				<p class="description"><?php echo __('', wpdefaultprivate); ?></p>
 			</td>
 		</tr>
