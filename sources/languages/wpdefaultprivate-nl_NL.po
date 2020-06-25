@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: wpDefaultPrivate 1.2.0\n"
+"Project-Id-Version: wpDefaultPrivate 1.2.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpDefaultPrivate\n"
 "POT-Creation-Date: 2020-06-25 00:00:00+00:00\n"
 "PO-Revision-Date: \n"
@@ -24,19 +24,19 @@ msgstr "Je hebt onvoldoende rechten voor het bekijken van deze pagina."
 msgid "Settings Saved"
 msgstr "Instellingen Opgeslagen"
 
-#: wpdefaultprivate.php:160
+#: wpdefaultprivate.php:166
 msgid "wpDefaultPrivate Settings"
 msgstr "wpDefaultPrivate Instellingen"
 
-#: wpdefaultprivate.php:166
+#: wpdefaultprivate.php:172
 msgid "Private Posts visible for all users"
 msgstr "Privé Berichten zichtbaar voor alle gebruikers"
 
-#: wpdefaultprivate.php:174
+#: wpdefaultprivate.php:180
 msgid "Private Pages visible for all users"
 msgstr "Privé Pagina's zichtbaar voor alle gebruikers"
 
-#: wpdefaultprivate.php:183
+#: wpdefaultprivate.php:189
 msgid "Save Changes"
 msgstr "Wijzigingen Opslaan"
 

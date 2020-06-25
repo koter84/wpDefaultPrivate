@@ -2,7 +2,7 @@
 Contributors: koter84
 Requires at least: 4.0
 Tested up to: 5.4
-Stable tag: 1.2.0
+Stable tag: 1.2.1
 Tags: private
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -21,6 +21,9 @@ by default private posts and pages are not visible for all users, this plugin ha
 bugs and feature-requests can go to: [GitHub](https://github.com/koter84/wpDefaultPrivate/issues) or [WordPress](https://wordpress.org/support/plugin/wpdefaultprivate)
 
 == Changelog ==
+
+= 1.2.1 =
+* bugfix for the settings page
 
 = 1.2.0 =
 * added option to make private pages visible to all users

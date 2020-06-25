@@ -1,14 +1,14 @@
 <?php
 /**
  * @package wpDefaultPrivate
- * @version 1.2.0
+ * @version 1.2.1
  */
 /*
 Plugin Name: wpDefaultPrivate
 Plugin URI: http://wordpress.org/plugins/wpDefaultPrivate/
 Description: This plugin makes all posts default to private instead of public
 Author: Dennis Koot
-Version: 1.2.0
+Version: 1.2.1
 Author URI: http://denniskoot.nl/
 Text Domain: wpDefaultPrivate
 */
@@ -147,11 +147,17 @@ function wpdefaultprivate_admin_options()
 		echo "<div class=\"updated\"><p><strong>".__('Settings Saved', 'wpdefaultprivate')."</strong></p></div>";
     }
 
-	// get current value for key
-	if(get_option($key) == 1)
-		$sel = "CHECKED";
+	// get current value for posts
+	if(get_option('wpdefaultprivate_allusers_posts') == 1)
+		$sel_posts = "CHECKED";
 	else
-		$sel = "";
+		$sel_posts = "";
+
+	// get current value for pages
+	if(get_option('wpdefaultprivate_allusers_pages') == 1)
+		$sel_pages = "CHECKED";
+	else
+		$sel_pages = "";
 
     // Now display the settings editing screen
     ?>
@@ -165,7 +171,7 @@ function wpdefaultprivate_admin_options()
 		<tr valign="top">
 			<th scope="row"><label for="wpdefaultprivate_allusers_posts"><?php echo __('Private Posts visible for all users', wpdefaultprivate); ?></label></th>
 			<td>
-				<input type="checkbox" name="wpdefaultprivate_allusers_posts" value="1" <?php echo $sel; ?>/>
+				<input type="checkbox" name="wpdefaultprivate_allusers_posts" value="1" <?php echo $sel_posts; ?>/>
 				<p class="description"><?php echo __('', wpdefaultprivate); ?></p>
 			</td>
 		</tr>
@@ -173,7 +179,7 @@ function wpdefaultprivate_admin_options()
 		<tr valign="top">
 			<th scope="row"><label for="wpdefaultprivate_allusers_pages"><?php echo __('Private Pages visible for all users', wpdefaultprivate); ?></label></th>
 			<td>
-				<input type="checkbox" name="wpdefaultprivate_allusers_pages" value="1" <?php echo $sel; ?>/>
+				<input type="checkbox" name="wpdefaultprivate_allusers_pages" value="1" <?php echo $sel_pages; ?>/>
 				<p class="description"><?php echo __('', wpdefaultprivate); ?></p>
 			</td>
 		</tr>
